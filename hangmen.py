@@ -1,7 +1,14 @@
 import random
+
+name = input("Enter your name")
+print("Welcome" , name )
+print("-------------------")
+print("try to guess the word in less than 10 attempts")
+hangman()
+
 def hangman():
 
-    word = random.choice(["pugger" , "littlepugger" , "tiger" , "superman" , "thor" , "pokemon" , "avengers" , "savewater" , "earth" , "annable" ])
+    word = random.choice(["butterfly", "cat", "dog", "tiger", "lion",  "superman" , "thor" , "pokemon" , "avengers" , "mars" , "earth" , "cosmos", "universe", "hangman" ])
     validLetters = 'abcdefghijklmnopqrstuvwxyz'
     turns = 10
     guessmade = ''
@@ -90,9 +97,5 @@ def hangman():
                 break
 
 
-name = input("Enter your name")
-print("Welcome" , name )
-print("-------------------")
-print("try to guess the word in less than 10 attempts")
-hangman()
-print()
+
+
