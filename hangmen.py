@@ -15,7 +15,6 @@ def hangman():
 
     while len(word) > 0:
         main = ""
-        missed = 0
 
         for letter in word:
             if letter in guessmade:
